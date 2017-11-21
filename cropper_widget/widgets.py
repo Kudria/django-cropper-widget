@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django import forms
 from django.forms.utils import flatatt
 from django.forms.widgets import *
 from django.utils.html import mark_safe, conditional_escape
+
+from . import settings
 
 
 class ClearableImageInput(ClearableFileInput):
@@ -96,6 +97,6 @@ class ClearableImageCropInput(ClearableImagePreviewInput):
         self.preview_attrs['data-aspect'] = aspect
 
     class Media:
-        js = ('js/cropper_widget.js', 'libs/cropper/cropper.min.js',)
-        css = {'all': ('libs/cropper/cropper.min.css',)}
+        js = ('js/cropper_widget/cropper_widget.js', settings.CROPPER_JS_URL,)
+        css = {'all': (settings.CROPPER_CSS_URL,)}
 
