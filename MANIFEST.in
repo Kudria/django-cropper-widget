@@ -1,1 +1,1 @@
-cropper_widget/static/js/cropper_widget.js
+recursive-include cropper_widget/static *

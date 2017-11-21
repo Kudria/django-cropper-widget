@@ -2,11 +2,29 @@ from distutils.core import setup
 
 setup(
     name='django-cropper-widget',
-    version='0.0',
-    packages=[''],
-    url='',
+    version='0.1',
+    packages=['cropper_widget'],
+    url='https://github.com/Kudria/django-cropper-widget',
     license='',
     author='Alexandr Kudriavtcev',
     author_email='kudria15@gmail.com',
-    description=''
+    description='',
+    classifiers=[
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.11',
+        'Intended Audience :: Developers',
+        'License :: ',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Topic :: Internet :: WWW/HTTP',
+        'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+    ],
 )
