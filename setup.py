@@ -1,9 +1,10 @@
-from distutils.core import setup
+from setuptools import find_packages, setup
 
 setup(
     name='django-cropper-widget',
-    version='0.1',
+    version='0.1.1',
     packages=['cropper_widget'],
+    include_package_data = True,
     url='https://github.com/Kudria/django-cropper-widget',
     license='',
     author='Alexandr Kudriavtcev',
