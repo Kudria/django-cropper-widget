@@ -89,8 +89,13 @@ celerybeat-schedule
 venv/
 ENV/
 
-#db
-.sqlite3
 
-# PyCharmProject
+### PyCharmProject
 .idea
+
+### Test project
+manage.py
+requirements.txt
+.sqlite3
+CropperTest/
+
