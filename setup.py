@@ -6,7 +6,7 @@ setup(
     packages=['cropper_widget'],
     include_package_data = True,
     url='https://github.com/Kudria/django-cropper-widget',
-    license='',
+    license='MIT',
     author='Alexandr Kudriavtcev',
     author_email='kudria15@gmail.com',
     description='',

@@ -25,15 +25,15 @@ class CropperWidget(widgets.ClearableFileInput):
     template_with_clear = ('%(input)s<img id="%(cropper_id)s" src="" %(cropper_attrs)s>'
                            '<input type="hidden" %(cropped_data_attrs)s/>')
 
-    def __init__(self, attrs=None, cropperOptions=None, img_attrs=None):
+    def __init__(self, attrs=None, cropper_options=None, img_attrs=None):
 
         super(CropperWidget, self).__init__(attrs)
         self.img_attrs = img_attrs or {}
         self.img_attrs.update(img_attrs)
         # cropper options
-        cropperOptions = cropperOptions or {}
+        cropper_options = cropper_options or {}
         self.cropperOptions = CROPPER_DEFAULT_OPTIONS.copy()
-        self.cropperOptions.update(cropperOptions)
+        self.cropperOptions.update(cropper_options)
         self.cropper_attrs = {
             'data-cropper-conf': json.dumps(self.cropperOptions),
             'class': 'cropper'
